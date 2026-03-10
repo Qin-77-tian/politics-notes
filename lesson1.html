@@ -3,46 +3,419 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lesson 1｜政治的边界与逻辑</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Lesson 1｜现代国家的形成</title>
+  <style>
+    :root{
+      --bg:#f7f8fc;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --primary:#2563eb;
+      --primary-soft:#dbeafe;
+      --accent:#0f766e;
+      --warn:#92400e;
+      --warn-bg:#fef3c7;
+      --tag:#eef2ff;
+      --shadow:0 10px 30px rgba(15,23,42,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    .container{
+      max-width:980px;
+      margin:0 auto;
+      padding:32px 20px 80px;
+    }
+    .hero{
+      background:linear-gradient(135deg,#1d4ed8 0%, #0f766e 100%);
+      color:#fff;
+      border-radius:24px;
+      padding:32px 28px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+    }
+    .hero h1{
+      margin:0 0 10px;
+      font-size:32px;
+      line-height:1.25;
+    }
+    .hero p{
+      margin:0;
+      opacity:.94;
+      font-size:15px;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:16px;
+    }
+    .chip{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.15);
+      font-size:13px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:24px;
+      box-shadow:var(--shadow);
+      margin-bottom:20px;
+    }
+    h2{
+      margin:0 0 14px;
+      font-size:22px;
+      color:#111827;
+    }
+    h3{
+      margin:22px 0 10px;
+      font-size:18px;
+      color:#111827;
+    }
+    h4{
+      margin:16px 0 8px;
+      font-size:16px;
+      color:#111827;
+    }
+    p{margin:8px 0}
+    ul{margin:8px 0 8px 22px}
+    li{margin:6px 0}
+    .note{
+      background:#f8fafc;
+      border-left:4px solid var(--primary);
+      padding:14px 16px;
+      border-radius:12px;
+      margin:12px 0;
+    }
+    .supplement{
+      background:#ecfeff;
+      border:1px solid #a5f3fc;
+      border-radius:16px;
+      padding:16px;
+      margin:14px 0;
+    }
+    .warn{
+      background:#fef3c7;
+      border:1px solid #fcd34d;
+      border-radius:16px;
+      padding:16px;
+      margin:14px 0;
+    }
+    .tag{
+      display:inline-block;
+      background:#eef2ff;
+      color:#3730a3;
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:12px;
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:16px;
+    }
+    .mini{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+      background:#fff;
+    }
+    .quote{
+      font-size:18px;
+      color:#0f172a;
+      font-weight:600;
+      padding:14px 18px;
+      background:var(--primary-soft);
+      border-radius:16px;
+      margin:16px 0;
+    }
+    .footer{
+      color:var(--muted);
+      font-size:13px;
+      margin-top:12px;
+    }
+    .timeline{
+      border-left:3px solid #cbd5e1;
+      padding-left:16px;
+      margin-left:6px;
+    }
+    .timeline .item{
+      margin:12px 0;
+      position:relative;
+    }
+    .timeline .item::before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:var(--primary);
+      position:absolute;
+      left:-22px;
+      top:10px;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Lesson 1｜第一课笔记</h1>
-      <p class="subtitle">《政治的边界与逻辑》</p>
-    </div>
-  </header>
-
-  <main class="container">
-    <a class="back-link" href="index.html">← 返回课程目录</a>
+  <div class="container">
+    <section class="hero">
+      <h1>Lesson 1｜现代国家的形成</h1>
+      <p>主题聚焦：早期现代国家形成、战争与财政、国家能力、欧洲路径与亚非拉国家建构差异</p>
+      <div class="meta">
+        <span class="chip">课程笔记</span>
+        <span class="chip">日期：2026-03-10</span>
+        <span class="chip">状态：已整理</span>
+      </div>
+    </section>
 
     <section class="card">
-      <p class="note-meta">状态：待记录</p>
-      <p>这一页将用于展示第一课整理后的课堂笔记内容。</p>
-    </section>
-
-    <section class="card note-section">
-      <h2>一、课程主题</h2>
-      <p>待补充。</p>
-    </section>
-
-    <section class="card note-section">
-      <h2>二、课堂要点</h2>
+      <h2>一、课堂核心线索</h2>
+      <div class="quote">现代国家并不是天然存在的，而是在战争、税收、保护、行政扩张与社会讨价还价中被逐渐“缔造”出来的。</div>
       <ul>
-        <li>待补充</li>
+        <li>早期现代国家形成的重要背景之一，是威斯特伐利亚条约之后，欧洲政治秩序逐渐向以主权国家为单位的格局发展。</li>
+        <li>国家形成过程中，王权地位抬升是一个突出特征。</li>
+        <li>欧洲在约1450年前后凶杀率明显下降，可以联系到国家对暴力的控制能力增强。</li>
+        <li>现代国家的形成，与“垄断一切合法的暴力”密切相关；对暴力的垄断，也决定了对税收的垄断。</li>
+        <li>统治者为了发动战争，需要不断进行资源汲取（extraction），包括相对自愿的与近乎强迫的方式。</li>
+        <li>在战争—税收—保护的循环中，国家通过警察、法律、行政组织等手段逐步渗入社会，国家被不断缔造出来。</li>
       </ul>
     </section>
 
-    <section class="card note-section">
-      <h2>三、关键词</h2>
-      <p>待补充</p>
+    <section class="card">
+      <h2>二、现代国家形成的基本机制</h2>
+
+      <h3>1. 战争、汲取与国家建构</h3>
+      <ul>
+        <li>统治者发动战争，会从社会中提取资源，这种资源提取就是汲取（extraction）。</li>
+        <li>汲取形式既可能带有一定自愿性，也可能接近强迫。</li>
+        <li>统治者在向社会主要阶层提供保护的过程中，建立起更稳定的统治结构。</li>
+        <li>随着战争需要扩大，国家对社会的管理装置也会扩张，例如警察系统、法律系统、财政监督、行政组织。</li>
+        <li>因此，国家不是先验成形，而是在战争与资源提取中逐步形成。</li>
+      </ul>
+
+      <h3>2. Tilly 的经典概括</h3>
+      <div class="note">
+        <strong>【课堂记录整理】</strong><br />
+        你课堂中提到：1975 年 Tilly 强调，统治方式与汲取方式的转变，会遇到社会抵抗，于是统治者不得不使用“讨价还价”。
+      </div>
+      <ul>
+        <li>统治者为了筹措战争资源，需要改革征税与统治方式。</li>
+        <li>但社会不会无限服从，因此会出现抵抗。</li>
+        <li>结果就是国家与社会之间出现了讨价还价（bargaining）。</li>
+      </ul>
+
+      <h3>3. 货币化经济与贷款的重要性</h3>
+      <ul>
+        <li>维持国家系统持续发展的关键条件之一，是货币化经济。</li>
+        <li>货币化有利于征税，因为若以实物为主，物品之间的折算和“汇率”都不稳定，征收与核算都更困难。</li>
+        <li>战争具有不确定性，因此统治者往往还依赖贷款。</li>
+        <li>能否获得贷款，取决于过去的还款能力��统辖地区的资本能力。</li>
+        <li>城市往往资本最丰富，因此对国家财政建设非常关键。</li>
+      </ul>
+
+      <h3>4. 税收类型与监督能力扩张</h3>
+      <ul>
+        <li>统治者可汲取的资源包括：贡品、租金、商业税、存量资金税收（如房产税等）、所得税。</li>
+        <li>越复杂、越深入社会的税种，就越要求国家具备强大的监督和行政能力。</li>
+        <li>因此，税收制度越成熟，通常意味着国家对社会的渗透能力越强。</li>
+      </ul>
+
+      <h3>5. 国家渗透社会与国家能力</h3>
+      <ul>
+        <li>国家渗入社会的能力增强，是现代国家形成的重要表现。</li>
+        <li>国家能力强弱的一个核心指标，是汲取能力。</li>
+        <li>课堂提到国家能力的几个维度：军事能力、行政能力、行政质量、汲取能力、信息收集能力。</li>
+      </ul>
     </section>
 
-    <section class="card note-section">
-      <h2>四、课后整理</h2>
-      <p>待补充</p>
+    <section class="card">
+      <h2>三、暴力垄断与国家形成</h2>
+      <ul>
+        <li>国家对暴力的垄断，是现代国家最核心的特征之一。</li>
+        <li>当私人暴力、地方武装、封建领主武力被压缩时，国家才能成为合法强制力的唯一中心。</li>
+        <li>暴力垄断一旦形成，税收垄断也更容易建立。</li>
+      </ul>
     </section>
-  </main>
+
+    <section class="card">
+      <h2>四、禀赋结构与政体走向</h2>
+      <div class="grid">
+        <div class="mini">
+          <h3>资本密集型路径</h3>
+          <p>政治精英与城市商业资本达成协议，形成较多的协商与约束。</p>
+          <p><strong>结果：</strong>更容易走向宪政政府。</p>
+        </div>
+        <div class="mini">
+          <h3>土地/劳动力聚集型路径</h3>
+          <p>政治精英联合地主，通过控制土地和压榨农民来维系统治。</p>
+          <p><strong>结果：</strong>更容易走向专制政府。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>五、Gary W. Cox：战争、财政僵局与国家形成</h2>
+      <ul>
+        <li>中世纪欧洲存在明显的财政分权。</li>
+        <li>征税权常常掌握在议会或等级代表机构手中，财政支配权往往由国王掌握。</li>
+        <li>议会担心国王滥用资金，因此出现“承诺问题”。</li>
+        <li>后续可能走向财政专制主义，或议会掌控财政。</li>
+      </ul>
+
+      <h3>为什么权力会向国王倾斜？</h3>
+      <ul>
+        <li>个体理性可能导致集体非理性。</li>
+        <li>反对王权的社会力量彼此分散，难以形成一致合作。</li>
+        <li>国王可以逐个击破。</li>
+        <li>更深层推动力，是外部战争威胁带来的财政改革压力。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>六、马基雅维利主要思想</h2>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求整理】</strong>
+      </div>
+      <ul>
+        <li>政治应按现实而非理想来理解。</li>
+        <li>国家生存高于道德说教。</li>
+        <li>统治者需要能力（virtù），即政治判断、谋略与行动能力。</li>
+        <li>政治受机运（fortuna）影响，统治者要尽量驾驭局势。</li>
+        <li>必要时可使用强制与欺骗以维持国家安全与秩序。</li>
+        <li>重视军事力量。</li>
+        <li>也重视制度与共和国传统。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>七、广阔地域、城邦国家、专制传统与自由传统</h2>
+
+      <h3>1. 广阔地域</h3>
+      <ul>
+        <li>疆域广阔会提高统治成本。</li>
+        <li>国家需要更强的交通、军队、财政与信息收集体系。</li>
+      </ul>
+
+      <h3>2. 城邦国家的特点</h3>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求补充】</strong>
+      </div>
+      <ul>
+        <li>疆域较小，人口相对集中，统治半径短。</li>
+        <li>城市商业、金融和手工业更发达。</li>
+        <li>更依赖城市精英、商人和自治团体的合作。</li>
+        <li>更容易形成协商式治理和契约关系。</li>
+      </ul>
+
+      <h3>3. 专制传统的特点</h3>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求补充】</strong>
+      </div>
+      <ul>
+        <li>权力高度集中于君主或中央统治集团。</li>
+        <li>地方社会和中间团体自主性较弱。</li>
+        <li>税收、司法、军队更多由中央直接掌控。</li>
+      </ul>
+
+      <h3>4. 自由传统的特点</h3>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求补充】</strong>
+      </div>
+      <ul>
+        <li>强调权力受限制。</li>
+        <li>重视财产权、法治、代表机构与地方自治。</li>
+        <li>国家征税与扩权往往需要协商和合法性支持。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>八、资源汲取与城市的重要性</h2>
+      <ul>
+        <li>城市是资本、商业、税源和贷款网络的集中地。</li>
+        <li>国家若能控制城市，就更容易建立稳定税基并接触金融资本。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>九、案例补充：亨利八世与王权集中</h2>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求补充】</strong>
+      </div>
+      <ul>
+        <li>亨利八世希望与阿拉贡的凯瑟琳离婚，但教皇不同意。</li>
+        <li>这导致英格兰王权与罗马教��发生冲突。</li>
+        <li>随后英格兰逐渐脱离教廷控制��国王成为英格兰教会最高领袖。</li>
+        <li>这强化了王权对宗教、司法与财产资源的控制。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>十、案例补充：西班牙卡斯蒂利亚与宗教裁判所</h2>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求补充】</strong>
+      </div>
+      <ul>
+        <li>卡斯蒂利亚是西班牙统一过程中的核心王国之一。</li>
+        <li>宗教裁判所在王权巩固中发挥了重要作用。</li>
+        <li>它不仅涉及宗教正统，也服务于政治整合和社会控制。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>十一、为什么亚非拉国家没有像欧洲国家那样发展起来？</h2>
+
+      <h3>1. 军事视角</h3>
+      <ul>
+        <li>外部环境趋于和平，缺乏持续提高军费、税收与行政能力的强烈动机。</li>
+      </ul>
+
+      <h3>2. 经济视角</h3>
+      <ul>
+        <li>殖民体系按先发展国家的利益设计，撤出后常留下效率和合法性较低的政府机构。</li>
+      </ul>
+
+      <h3>3. 文化/政治整合视角</h3>
+      <ul>
+        <li>殖民边界常不对应原有民族、语言与宗教分布。</li>
+        <li>领导人缺乏足够条件塑造统一民族认同。</li>
+      </ul>
+
+      <h3>4. “分而治之”的解释与例子</h3>
+      <div class="supplement">
+        <strong>【补充说明｜应你的请求补充】</strong>
+      </div>
+      <ul>
+        <li>分而治之是指统治者故意维持或制造被统治群体之间的分裂，以防他们联合反抗。</li>
+        <li>常见做法包括偏袒某一族群、利用地方精英、强化身份政治。</li>
+        <li>后果是独立后国家仍面临严重整合困难。</li>
+      </ul>
+
+      <h3>5. 地理视角</h3>
+      <ul>
+        <li>复杂地形和低人口密度会显著提高国家建构成本。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>十二、本课总结</h2>
+      <ul>
+        <li>现代国家形成的核心动力之一是战争。</li>
+        <li>战争推动财政汲取、税收制度、贷款机制和行政组织的发展。</li>
+        <li>国家对合法暴力的垄断，是财政垄断与社会渗透的基础。</li>
+        <li>欧洲路径的特殊性，在于长期战争竞争、财政压力与社会谈判的共同作用。</li>
+      </ul>
+      <p class="footer">注：凡属额外解释、背景扩展、概念说明之处，均已明确标注。</p>
+    </section>
+  </div>
 </body>
 </html>
