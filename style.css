@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.75;
+}
+
+.container {
+  width: min(920px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 56px 0 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.site-header h1 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  opacity: 0.92;
+}
+
+main {
+  padding: 32px 0 60px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.lesson-list {
+  padding-left: 20px;
+}
+
+.lesson-list li {
+  margin-bottom: 10px;
+}
+
+.lesson-list a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.lesson-list a:hover {
+  color: #2563eb;
+}
+
+.tip {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.note-meta {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.note-section {
+  margin-bottom: 28px;
+}
+
+.note-section h2 {
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  color: #1e40af;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding-left: 22px;
+}
