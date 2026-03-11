@@ -8,24 +8,28 @@
   <style>
     .course-layout {
       display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
-      gap: 24px;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 28px;
       align-items: start;
     }
 
     .sidebar {
       position: sticky;
       top: 24px;
-      background: white;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+      background: rgba(255, 252, 247, 0.8);
+      border-radius: 24px;
+      padding: 24px 18px;
+      box-shadow: 0 10px 28px rgba(38, 46, 77, 0.06);
+      border: 1px solid rgba(231, 225, 216, 0.9);
+      backdrop-filter: blur(10px);
     }
 
     .sidebar h2 {
       margin-top: 0;
-      font-size: 1.1rem;
-      color: #1d4ed8;
+      margin-bottom: 18px;
+      font-size: 1.45rem;
+      color: #22345c;
+      letter-spacing: 0.02em;
     }
 
     .course-nav {
@@ -35,63 +39,158 @@
     }
 
     .course-nav li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .course-nav a {
       display: block;
       text-decoration: none;
-      color: #94a3b8;
-      padding: 10px 12px;
-      border-radius: 10px;
-      transition: all 0.2s ease;
-      font-weight: 600;
+      color: #99a3b3;
+      padding: 12px 14px;
+      border-radius: 14px;
+      transition: all 0.22s ease;
+      font-weight: 700;
+      font-size: 0.98rem;
+      letter-spacing: 0.01em;
     }
 
     .course-nav a:hover {
-      background: #eff6ff;
-      color: #2563eb;
+      background: #eef3ff;
+      color: #2f5bd3;
+      transform: translateX(2px);
     }
 
     .course-nav a.active {
-      background: #dbeafe;
-      color: #1d4ed8;
-      box-shadow: inset 3px 0 0 #2563eb;
+      background: linear-gradient(135deg, #e7efff 0%, #dae7ff 100%);
+      color: #2749af;
+      box-shadow: inset 4px 0 0 #2f5bd3;
+    }
+
+    .course-nav a.available {
+      color: #4d5d74;
+    }
+
+    .content-column {
+      min-width: 0;
     }
 
     .content-column .card {
-      margin-bottom: 24px;
+      margin-bottom: 28px;
+      padding: 42px 46px;
     }
 
     .lesson-block {
-      scroll-margin-top: 24px;
+      scroll-margin-top: 26px;
     }
 
     .lesson-label {
       display: inline-block;
-      background: #dbeafe;
-      color: #1d4ed8;
-      font-size: 0.9rem;
-      font-weight: 700;
-      padding: 4px 10px;
+      background: linear-gradient(135deg, #e6edff 0%, #dce8ff 100%);
+      color: #264bb8;
+      font-size: 0.95rem;
+      font-weight: 800;
+      padding: 8px 16px;
       border-radius: 999px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
+      box-shadow: inset 0 0 0 1px rgba(47, 91, 211, 0.08);
+    }
+
+    .lesson-title {
+      margin-top: 0;
+      margin-bottom: 18px;
+      color: #22345c;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.22;
+      letter-spacing: 0.01em;
+    }
+
+    .lesson-subtitle {
+      color: #6a7484;
+      font-size: 1.18rem;
+      line-height: 1.85;
+      margin-top: 0;
+      margin-bottom: 2.2rem;
+    }
+
+    .quote-box {
+      background: linear-gradient(135deg, #eef4ff 0%, #e7eefb 100%);
+      border-left: 5px solid #2f5bd3;
+      padding: 22px 24px;
+      border-radius: 20px;
+      margin: 18px 0 24px;
+      font-weight: 700;
+      color: #1c2c4d;
+      font-size: 1.08rem;
+      line-height: 1.9;
+      box-shadow: 0 8px 18px rgba(47, 91, 211, 0.06);
+    }
+
+    .supplement {
+      background: linear-gradient(135deg, #f6fbff 0%, #eef8ff 100%);
+      border: 1px solid #d5edf8;
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin: 16px 0;
+      color: #284255;
+    }
+
+    .note-box {
+      background: linear-gradient(135deg, #faf7f2 0%, #f5f1e9 100%);
+      border-left: 4px solid #c7953d;
+      padding: 16px 18px;
+      border-radius: 16px;
+      margin: 16px 0;
+      color: #4a3a1d;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+
+    .mini-card {
+      border: 1px solid #e5dfd5;
+      border-radius: 18px;
+      padding: 20px 20px 18px;
+      background: linear-gradient(180deg, #fffdfa 0%, #fff8ef 100%);
+      box-shadow: 0 6px 18px rgba(38, 46, 77, 0.05);
+    }
+
+    .mini-card h4 {
+      margin-top: 0;
     }
 
     .back-home {
       display: inline-block;
       margin-bottom: 20px;
-      color: #2563eb;
+      color: #2f5bd3;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 800;
+      font-size: 1.25rem;
     }
 
     .back-home:hover {
       text-decoration: underline;
     }
 
-    .intro-note {
-      color: #6b7280;
+    .footer-note {
+      color: #7a8392;
+      font-size: 0.98rem;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 1100px) {
+      .course-layout {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 22px;
+      }
+
+      .content-column .card {
+        padding: 32px 28px;
+      }
     }
 
     @media (max-width: 900px) {
@@ -101,6 +200,18 @@
 
       .sidebar {
         position: static;
+      }
+
+      .content-column .card {
+        padding: 24px 22px;
+      }
+
+      .lesson-title {
+        font-size: 2.2rem;
+      }
+
+      .lesson-subtitle {
+        font-size: 1.05rem;
       }
     }
   </style>
@@ -120,7 +231,7 @@
       <aside class="sidebar">
         <h2>课程目录</h2>
         <ul class="course-nav">
-          <li><a href="#lesson1" class="nav-link active">Lesson 1</a></li>
+          <li><a href="#lesson1" class="nav-link available active">Lesson 1</a></li>
           <li><a href="#lesson2" class="nav-link">Lesson 2</a></li>
           <li><a href="#lesson3" class="nav-link">Lesson 3</a></li>
           <li><a href="#lesson4" class="nav-link">Lesson 4</a></li>
@@ -142,17 +253,59 @@
       <div class="content-column">
         <section id="lesson1" class="card lesson-block">
           <div class="lesson-label">Lesson 1</div>
-          <h2>待更新</h2>
-          <p class="intro-note">
-            这是《马克思主义原理》的课程总页面。以后你发送“马克思lessonX开始”并在结束时附上当前 HTML 文件，
-            我会把新的课程内容继续追加在这一页中。
+          <h2 class="lesson-title">待更新</h2>
+          <p class="lesson-subtitle">
+            这是《马克思主义原理》的课程总页面。之后你每次发送
+            “马克思lessonX开始”，并在结束时附上当前的 `marx.html`，
+            我就会把新的课程内容继续追加在这个页面中。
+          </p>
+
+          <div class="quote-box">
+            这一页采用“单课程单页面”的结构：左侧是课程目录，右侧是连续正文。
+            以后 Lesson 1—Lesson 16 的内容会按顺序不断补充进去。
+          </div>
+
+          <h3>一、使用方式</h3>
+          <ul>
+            <li>开始上课时，你发送：<strong>马克思lessonX开始</strong></li>
+            <li>上课过程中，你持续给我发送课堂笔记</li>
+            <li>你也可以中途插入补充要求，例如“这里补充一下背景”</li>
+            <li>结束时发送：<strong>结束</strong></li>
+            <li>并附上当前的 <strong>marx.html</strong>，我会返回完整最新版</li>
+          </ul>
+
+          <h3>二、后续整理原则</h3>
+          <div class="supplement">
+            <strong>【整理规则】</strong><br />
+            我会把你的课堂速记整理成更适合复习和网页阅读的结构化内容，同时尽量保留课堂原意。
+            你中途要求我补充的概念、背景、例子、比较，也会一起整合进去，并尽量标注为补充说明。
+          </div>
+
+          <h3>三、内容预留说明</h3>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <h4>课堂主线</h4>
+              <p>每一课的核心概念、理论结构、主要论证、老师强调的重点。</p>
+            </div>
+            <div class="mini-card">
+              <h4>补充说明</h4>
+              <p>你要求我解释的术语、背景、人物、例子和对比分析。</p>
+            </div>
+            <div class="mini-card">
+              <h4>连续追加</h4>
+              <p>每节课不会跳转新页面，而是继续追加在本页下方，方便整体复习。</p>
+            </div>
+          </div>
+
+          <p class="footer-note">
+            注：当前为课程页面初始化版本，后续课堂内容将按 Lesson 2、Lesson 3……继续补充。
           </p>
         </section>
 
         <section id="lesson2" class="card lesson-block">
           <div class="lesson-label">Lesson 2</div>
           <h2>待更新</h2>
-          <p>后续课程内容将在这里追加。</p>
+          <p>这一节内容将在你发送“马克思lesson2开始”并完成记录后补充到这里。</p>
         </section>
 
         <section id="lesson3" class="card lesson-block">
