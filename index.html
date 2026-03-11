@@ -3,42 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>政治的边界与逻辑｜课程笔记</title>
+  <title>文科课程笔记｜首页</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+      border: 1px solid #e5e7eb;
+    }
+
+    .course-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #1d4ed8;
+    }
+
+    .course-card p {
+      color: #4b5563;
+      margin-bottom: 14px;
+    }
+
+    .course-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .course-card li {
+      margin-bottom: 10px;
+    }
+
+    .course-card a {
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    .course-card a:hover {
+      color: #2563eb;
+    }
+
+    .command-box {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 16px;
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+
+    .command-box code {
+      background: #dbeafe;
+      padding: 2px 8px;
+      border-radius: 8px;
+      font-family: Consolas, monospace;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>《政治的边界与逻辑》课程笔记</h1>
-      <p class="subtitle">课堂实时记录整理版｜持续更新</p>
+      <h1>文科课程笔记</h1>
+      <p class="subtitle">课堂实时记录整理版｜按课程分类持续更新</p>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
-      <h2>课程简介</h2>
+      <h2>网站简介</h2>
       <p>
-        本网站用于整理《政治的边界与逻辑》每一堂课的课堂笔记。
-        每节课都会根据课堂实时记录，整理为结构化内容，方便复习、查阅与后续补充。
+        本网站用于整理各类文科课程的课堂笔记。
+        你可以通过和我对话的方式实时记录课堂内容，我会在课程结束后将其整理为结构化网页内容，方便复习、查阅与后续补充。
       </p>
     </section>
 
     <section class="card">
       <h2>课程目录</h2>
-      <ul class="lesson-list">
-        <li><a href="lesson1.html">Lesson 1｜现代国家的形成</a></li>
-      </ul>
-      <p class="tip">后续新增课程时，只需要继续添加链接即可。</p>
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>政治的边界与逻辑</h3>
+          <p>用于整理政治学相关课程内容，包括国家形成、政治思想、国家能力等主题。</p>
+          <ul>
+            <li><a href="lesson1.html">Lesson 1｜第一课笔记</a></li>
+          </ul>
+        </div>
+
+        <div class="course-card">
+          <h3>马克思主义原理</h3>
+          <p>用于整理马克思主义基本理论、哲学、政治经济学与科学社会主义等课程内容。</p>
+          <ul>
+            <li>暂未添加课程页面</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="card">
       <h2>使用说明</h2>
       <ol>
-        <li>上课开始时，发送：<strong>lessonX开始</strong></li>
+        <li>上课开始时，发送对应的开始口令</li>
         <li>上课过程中，把你的课堂记录持续发给我</li>
         <li>课程结束时，发送：<strong>结束</strong></li>
-        <li>我会返回：网页版 HTML、首页更新代码、操作步骤</li>
+        <li>我会返回对应课程的网页版 HTML、首页更新代码和操作步骤</li>
       </ol>
+
+      <div class="command-box">
+        <p><strong>当前支持的开始提示语：</strong></p>
+        <p><code>政治lesson2开始</code></p>
+        <p><code>马克思lesson2开始</code></p>
+      </div>
     </section>
   </main>
 </body>
